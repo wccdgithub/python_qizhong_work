@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+     <!-- 引入jQuery -->
+    <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+     <!-- 引入 Bootstrap -->
+     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+     <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+     <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>         
+     <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    <title>数据展示平台</title>        
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <ul class="nav nav-pills">
+                        <li class="active">
+                            <a href=".">首页</a>
+                        </li>
+                        <li>
+                            <a href="testdb">豆瓣top250电影</a>
+                        </li>
+                        <li >
+                            <a href="weather">天气爬取</a>
+                        </li>
+                        <li >
+                            <a href="phone?p=1">京东手机爬取</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="span8">
+                    <dl>
+                        <dt>
+                            电影爬取
+                        </dt>
+                        <dd>
+                            关于豆瓣电影排名前250静态网页爬取
+                        </dd>
+                        <dt>
+                            城市天气
+                        </dt>
+                        <dd>
+                            爬取中国天气网的几个城市的天气
+                        </dd> 
+                        <dt>
+                            京东手机爬取
+                        </dt>
+                        <dd>
+                            利用selenium，进行动态页面爬取
+                        </dd>                               
+                </div>
+                <div class="span12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">制作人信息：</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>姓名：吴纯纯</p>
+                            <p>班级：16计算机三班</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+                
+            
+             
+</body>
+</html> 
