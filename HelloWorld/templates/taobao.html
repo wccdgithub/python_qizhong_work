@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="span12">
                     <ul class="nav nav-pills">
-                        <li class="active">
+                        <li >
                             <a href=".">首页</a>
                         </li>
                         <li>
@@ -34,54 +34,25 @@
                         <li >
                             <a href="phone?p=1">京东手机爬取</a>
                         </li>
-                        <li >
+                        <li class="active" >
                             <a href="taobao">淘宝商品</a>
                         </li>
                     </ul>
                 </div>
-                <div class="span8">
-                    <dl>
-                        <dt>
-                            电影爬取
-                        </dt>
-                        <dd>
-                            关于豆瓣电影排名前250静态网页爬取
-                        </dd>
-                        <dt>
-                            城市天气
-                        </dt>
-                        <dd>
-                            爬取中国天气网的几个城市的天气
-                        </dd> 
-                        <dt>
-                            京东手机爬取
-                        </dt>
-                        <dd>
-                            利用selenium，进行动态页面爬取
-                        </dd> 
-                        <dt>
-                            淘宝商品爬取
-                        </dt>
-                        <dd>
-                            利用re，正则爬取页面信息
-                        </dd>                               
-                </div>
-                <div class="span12">
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">制作人信息：</h3>
-                        </div>
-                        <div class="panel-body">
-                            <p>姓名：吴纯纯</p>
-                            <p>班级：16计算机三班</p>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
-    </div>
+  
+    <h1>淘宝商品爬取</h1>
+    <table class="table  table-bordered table-hover" >
+        {% for i in infoList %} 
+        <tr>
+            <td>{{ i.price }}</td>
+            <td>{{ i.title }}</td>
+
+       </tr>
+       {% endfor%} 
+    </table>
                 
             
-             
+</div>            
 </body>
 </html> 
