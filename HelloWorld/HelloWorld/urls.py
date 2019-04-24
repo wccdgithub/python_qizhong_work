@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.conf.urls import *
-from . import testdb,weather,hello,phone
+from . import view,testdb,weather,hello,phone,taobao
 
 
 urlpatterns = [
@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^testdb$', testdb.testdb),
     url(r'^weather$', weather.weatherdb),
     url(r'^phone$', phone.phonedb),
+    url(r'^taobao$', taobao.taobao),
 ]
